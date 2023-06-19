@@ -105,8 +105,18 @@ body{
     background-size: cover;
 } 
 
-.offer__item4{
+.offer__item1{
+    background-image: url(../img/for_women.png);
+}
 
+.offer__item2{
+    background-image: url(../img/for_man.png);
+}
+.offer__item3{
+    background-image: url(../img/for_kids.png);
+}
+.offer__item4{
+    background-image: url(../img/accesories.png);
     grid-column: span 3;
 }
 
@@ -245,6 +255,212 @@ body{
     color: #FFFFFF;
 }
 
+
+/* Main Info */
+.main__info{
+    background: #222224;
+    padding: 103px 0;
+}
+
+.info__continer{
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.info__box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.info__icon{
+    padding-bottom: 28px;
+}
+
+.info__title{
+    /* margin-top: 28px; */
+    margin-bottom: 16px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.info__title{
+    font-weight: 400;
+    font-size: 19.96px;
+    line-height: 24px;
+    color: #FBFBFB;
+}
+
+.info__text{
+    font-weight: 300;
+    font-size: 13.972px;
+    line-height: 17px;
+    text-align: center;
+    color: #FBFBFB;
+}
+
+/* Form */
+
+.main__form{
+    background-image: url(../img/photo_subscribe.jpg);
+    background-position: center;
+    background-size: cover;
+    max-width: 100vw;
+    padding-top: 97px;
+    padding-bottom: 126px;
+}
+
+.form__conteiner{
+    display: flex;
+    justify-content: space-between;
+}
+
+.form__figure{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.figure__img{
+    margin-bottom: 38px;
+}
+
+.rew__text{
+    text-align: center;
+    max-width: 360px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #222224;
+}
+
+.form__figcaption{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #222224;
+}
+
+.input__email::placeholder{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    color: #222224;
+    opacity: 0.67;
+
+}
+
+.subscribe__title{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 167.2%;
+    text-align: center;
+    color: #222224;
+}
+
+.title__text{
+    font-weight: 400px;
+    font-size: 18px;
+    margin-bottom: 32px;
+}
+
+.input__email{
+    width: 74.4%;
+    height: 49px;
+    padding-left: 22px;
+    background: #E1E1E1;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: 0;
+}
+
+.input__btn{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 0 8px;
+    width: 29%;
+    height: 49px;
+    background: #F16D7F;
+    border: 0;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.form__subscribe{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 70px;
+}
+
+.subscribe__form{
+    display: flex;
+    width: 100%;
+}
+
+
+/* Footer */
+.footer{
+    background: #222224;
+    padding: 24px 0;
+}
+
+.footer__link{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FBFBFB;
+}
+
+.footer__conteiner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__social{
+    display: flex;
+    gap: 8px;
+}
+
+.link__feacebook{
+    padding: 8px 11.83px 9.28px 11.55px;
+    background: #FFF;
+}
+
+.link__instagram{
+    padding: 9.06px 8.6px 8.06px 7.94px;
+    background: #FFF;
+}
+.link__pinterest{
+    padding: 8.2px 9.6px 8.2px 9.93px;
+    background: #FFF;
+}
+.link__twitter{
+    padding: 9.5px 7.61px 9.5px 7.95px;
+    background: #FFF;
+}
+
+.social__link:hover{
+    background: #F16D7F;
+}
+
+
+
+
 @media(max-width:1024px){
     .center{
         max-width: 734px;  
@@ -311,5 +527,77 @@ body{
     .form__subscribe{
         line-height: 162%;
         margin: 0;
+    }
+}
+
+@media(max-width:767px){
+    
+    .center{
+        max-width: 310px;
+    }
+
+    .header__forma, .header__basket, .top__img{
+        display: none;
+    }
+
+    .top__title{
+        padding: 148px 0;
+    }
+
+    .top__title-title{
+        font-size: 38px;
+        line-height: 34px;
+    }
+
+    .main__offer{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 247px 247px 247px 111px;
+        margin-bottom: 64px;
+    }
+
+    .main__offer-text{
+        margin-bottom: 64px;
+    }
+
+    .offer__item4{
+        grid-column: span 1;
+    }
+
+    .product__items{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        margin-bottom: 41px;
+    }
+
+    .product__text{
+        text-align: center;
+    }
+
+
+    .rew__text{
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .subscribe__form{
+       width: 90%;
+    }
+
+    .title__text{
+        text-align: center;
+    }
+
+    .subscribe__title{
+        line-height: 153%;
+    }
+
+    .input__email{
+        max-width: 309px;
+    }
+
+    .footer__conteiner{
+        flex-direction: column-reverse;
+       padding: 43px 0 9px;
+        gap: 40px;
     }
 }
