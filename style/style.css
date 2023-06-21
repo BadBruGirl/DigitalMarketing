@@ -251,17 +251,17 @@ body{
 } 
 
 .offer__item1{
-    background-image: url(/app/img/for_women.png);
+    background-image: url(../img/for_women.png);
 }
 
 .offer__item2{
-    background-image: url(/app/img/for_man.png);
+    background-image: url(../img/for_man.png);
 }
 .offer__item3{
-    background-image: url(/app/img/for_kids.png);
+    background-image: url(../img/for_kids.png);
 }
 .offer__item4{
-    background-image: url(/app/img/accesories.png);
+    background-image: url(../img/accesories.png);
     grid-column: span 3;
 }
 
@@ -478,7 +478,7 @@ body{
 /* Form */
 
 .main__form{
-    background-image: url(/app/img/photo_subscribe.jpg);
+    background-image: url(../img/photo_subscribe.jpg);
     background-position: center;
     background-size: cover;
     max-width: 100vw;
