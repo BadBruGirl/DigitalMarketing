@@ -1,3 +1,6 @@
+@charset "utf-8";
+@import 'vars';
+
 body {
     font-family: 'Lato', sans-serif;
     // font-family: 'Roboto', sans-serif;
@@ -1377,15 +1380,159 @@ summary::-webkit-details-marker {
     }
 
     &__item {
-        margin-bottom: 16px;
-        color: $colorText;
-        font-size: 24px;
-        font-weight: 300;
-        line-height: normal;
+        display: flex;
+            align-items: flex-start;
+            margin-bottom: 16px;
+            color: $colorText;
+            font-size: 24px;
+            font-weight: 300;
+            line-height: normal;
+    }
 
-        &::before {
-            content: url(../img/tick_symbol.svg);
+        &__item>svg {
             margin-right: 22px;
+            margin-top: 8px;
+        }
+}
+/***********  @media  **************/
+
+@media(max-width:1024px) {
+    .center {
+        padding-left: calc(50% - $widthSiteTablet / 2);
+        padding-right: calc(50% - $widthSiteTablet / 2);
+    }
+
+    .top {
+        &-img {
+            margin-left: 0;
+        }
+
+        &__title-title {
+            font-size: 44px;
+            line-height: 36px;
+        }
+
+        &__title-title span {
+            font-size: 24px;
+            line-height: 24px;
+        }
+
+        &__line {
+            margin-top: -7px;
         }
     }
+
+    .main {
+        &___offer {
+            gap: 19px;
+            margin-bottom: 109px;
+        }
+    }
+
+    .product {
+        &__title {
+            margin-bottom: 3.3px;
+        }
+
+        &__text {
+            margin-bottom: 72px;
+        }
+
+        &__btn {
+            margin-bottom: 65px;
+        }
+    }
+
+    .product-items {
+        gap: 16px;
+    }
+
+    .info {
+        padding-top: 48px;
+        padding-bottom: 64px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 48px;
+    }
+
+    .subscribe {
+        padding-top: 54px;
+        padding-bottom: 146px;
+        background-image: url(../img/photo_subscribeTable.png);
+        flex-direction: column;
+        align-items: center;
+        gap: 48px;
+
+        &__promotion {
+            margin-right: 0;
+        }
+    }
+
+    .filter-sort {
+        gap: 16px;
+        width: auto;
+    }
+
+    .filter-box {
+        padding-top: 24px;
+    }
+
+    .sort-box {
+        justify-content: flex-end;
+        padding-top: 24px;
+    }
+
+    .filter {
+        padding-left: 0;
+    }
+
+    .cart-box {
+        flex-direction: column;
+        padding-top: 59px;
+        // justify-content: center;
+        gap: 64px;
+    }
+
+    .cart {
+        width: 100%;
+
+        &__buttons {
+            width: 100%;
+            justify-content: center;
+            gap: 48px;
+            margin-top: 24px;
+        }
+    }
+
+    .shipping {
+        width: auto;
+        flex-direction: row;
+        // justify-content: space-between;
+        gap: 16px;
+    }
+
+    .total {
+        margin-top: 58px;
+    }
+
+    .registration-box {
+        width: auto;
+        gap: 22px;
+    }
+
+    .loyalty {
+
+        &__heading,
+        &__text,
+        &__item {
+            font-size: 16px;
+        }
+
+        &__item>svg {
+            margin-top: 5px;
+        }
+    }
+
+
 }
